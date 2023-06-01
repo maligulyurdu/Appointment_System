@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="141.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appointment_tracking_system.ExitController">
+   <children>
+      <Label layoutX="83.0" layoutY="14.0" text="Are you sure you want to log out?">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <HBox layoutX="20.0" layoutY="95.0" prefHeight="30.0" prefWidth="372.0" spacing="64.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="97.0" text="Cancel" />
+            <Button fx:id="exportButton" mnemonicParsing="false" onAction="#exportandexit" prefHeight="25.0" prefWidth="97.0" text="Export and exit" />
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="97.0" text="Exit" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

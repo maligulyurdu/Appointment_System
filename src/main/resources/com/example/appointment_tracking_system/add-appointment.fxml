@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appointment_tracking_system.AddController">
+   <children>
+      <ImageView fitHeight="498.0" fitWidth="668.0" opacity="0.31" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/Image/background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="662.0">
+         <children>
+            <VBox layoutX="41.0" layoutY="78.0" prefHeight="365.0" prefWidth="198.0" spacing="30.0">
+               <children>
+                  <TextField fx:id="add_add_name" prefHeight="25.0" prefWidth="106.0" promptText="Full Name" />
+                  <TextField fx:id="add_add_id" prefHeight="25.0" prefWidth="106.0" promptText="ID (6 characters)" />
+                  <TextField fx:id="add_add_num" prefHeight="25.0" prefWidth="0.0" promptText="Phone Number" />
+                  <DatePicker fx:id="add_date" prefHeight="25.0" prefWidth="210.0" promptText="Date" />
+                  <VBox prefHeight="139.0" prefWidth="198.0" spacing="31.0">
+                     <children>
+                        <VBox prefHeight="67.0" prefWidth="198.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="31.0" prefWidth="206.0" text="Select Hour" />
+                              <ComboBox fx:id="add_add_hour" prefHeight="35.0" prefWidth="198.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="73.0" prefWidth="174.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="214.0" text="Select Doctor" />
+                              <ChoiceBox fx:id="add_add_doctor" prefHeight="30.0" prefWidth="198.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Button fx:id="add_add_button" layoutX="557.0" layoutY="413.0" mnemonicParsing="false" onAction="#add_add_appointment" prefHeight="60.0" prefWidth="87.0" text="Add" />
+            <Label layoutX="41.0" prefHeight="60.0" prefWidth="437.0" text="Create Appointment" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="19.0">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelButton" layoutX="482.0" layoutY="431.0" mnemonicParsing="false" onAction="#add_cancel" text="Cancel" />
+            <TextArea fx:id="complaintInput" layoutX="317.0" layoutY="78.0" prefHeight="118.0" prefWidth="307.0" promptText="Reason" />
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

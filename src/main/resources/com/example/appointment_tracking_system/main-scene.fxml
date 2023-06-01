@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1266.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appointment_tracking_system.Controller">
+   <children>
+      <ImageView fx:id="background" fitHeight="765.0" fitWidth="1266.0" opacity="0.43">
+         <image>
+            <Image url="@../../../assets/Image/background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1266.0">
+         <children>
+            <TableView fx:id="tableView" layoutX="14.0" layoutY="236.0" prefHeight="515.0" prefWidth="994.0">
+               <columns>
+                  <TableColumn fx:id="main_patient_name" prefWidth="242.0" text="Patient Name" />
+                  <TableColumn fx:id="main_patient_id" prefWidth="88.0" text="ID" />
+                  <TableColumn fx:id="main_date" prefWidth="107.0" text="Date" />
+                  <TableColumn fx:id="main_time" prefWidth="95.0" text="Time" />
+                  <TableColumn fx:id="main_phone_num" prefWidth="140.0" text="Phone Number" />
+                  <TableColumn fx:id="main_doctor_name" prefWidth="321.0" text="Doctor Name" />
+               </columns>
+            </TableView>
+            <VBox layoutX="1064.0" layoutY="259.0" prefHeight="211.0" prefWidth="147.0" spacing="40.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#main_add_appointment" prefHeight="43.0" prefWidth="150.0" text="Add Appointment" />
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#main_delete_appointment" prefHeight="43.0" prefWidth="158.0" text="Delete Appointment" />
+                  <Button mnemonicParsing="false" onAction="#showComplaint" prefHeight="43.0" prefWidth="149.0" text="Show Complaint" />
+               </children>
+            </VBox>
+            <ImageView fx:id="logo" fitHeight="143.0" fitWidth="147.0" layoutX="1064.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Image/marmara_logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="20.0" layoutY="46.0" prefHeight="110.0" prefWidth="1183.0" text="Appointment Tracking System" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font name="System Bold Italic" size="41.0" />
+               </font>
+            </Label>
+            <Button fx:id="exitButton" layoutX="1079.0" layoutY="494.0" mnemonicParsing="false" onAction="#exit" prefHeight="15.0" prefWidth="116.0" text="Exit" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
